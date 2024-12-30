@@ -1,0 +1,188 @@
+body {
+    background-color: #0A0119;
+    color: #F9F5FF;
+    font-family: 'Inter';
+}
+
+.subNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 20px ;
+}
+
+.subNavLeft {
+    font-size: 32px;
+}
+
+.subNavRight {
+    font-size: 22px;
+}
+
+.subNavkeys {
+    color: #F9F5FF;
+    text-decoration: none;
+    padding: 0px 15px;
+}
+
+.subNavkeys:hover {
+    color: #F9F5FF;
+    text-decoration: underline;
+}
+
+.subNavkeys:visited {
+    color: #c1c1c2;
+    text-decoration: underline;
+}
+
+.splitSection1, .splitSection2 {
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+
+.splitSection1text, .splitSection1image, .splitSection2text, .splitSection2image {
+    width: 50%;
+    padding: 30px 20px;
+}
+
+.splitSection1text {
+    display: flex;
+    flex-direction: column;
+
+
+}
+.splitSection1image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+    width: auto;
+}
+
+.splitSection1textitem {
+    display: flex;
+    justify-content: left;
+    padding: 5px 0px;
+
+}
+
+.fontsize32px {
+    font-size: 32px;
+}
+
+.fontsize48px {
+    font-size: 48px;
+}
+
+.fontsize18px{
+    font-size: 18px;
+}
+
+.ctaButton {
+    margin-top: 25px;
+    padding: 9px 0px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.text-section-common {
+    display: flex;
+    font-size: 36px;
+    line-height: 38px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* .splitSection2image {
+ 
+} */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-item {
+    position: relative;
+    flex: 1 1 30%;
+    max-width: 30%;
+    
+}
+
+.project-img-button {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    text-align: center;
+    pointer-events: none;
+}
+
+.project-img {
+    transition: opacity 0.1s ease; /* Smooth transition effect */
+    opacity: 1; /* Fully visible by default */
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-item:hover .project-img {
+    opacity: 0.5; /* Dim the image on hover */
+}
+
+.project-item:hover .project-img-button {
+    opacity: 1; /* Make the button visible */
+    pointer-events: auto; /* Enable interaction with the button */
+}
+
+.project-img-buttons {
+    font-size: 20px;
+    background-color: transparent;
+    color: #FAFBFF;
+    margin: 10px;
+    line-height: 25px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.project-img-buttons:hover {
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 10px;
+    line-height: 25px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    pointer-events: auto;
+    border-radius: 10px;
+}
+
+.project-description {
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.project-description-name {
+    font-size: 24px;
+    line-height: 29px;
+    color: #FAFBFF;
+}
+
+.tech-used {
+    display: flex;
+}
+
+.tech-used-n {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
