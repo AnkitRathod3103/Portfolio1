@@ -2,6 +2,7 @@ body {
     background-color: #0A0119;
     color: #F9F5FF;
     font-family: 'Inter';
+    scroll-behavior: smooth;
 }
 
 .subNav, .footer, .footer-line-1  {
@@ -17,6 +18,11 @@ body {
 
 .subNavRight {
     font-size: 22px;
+}
+
+.subNavRightm {
+    display: none;
+
 }
 
 .subNavkeys {
@@ -40,8 +46,6 @@ body {
     width: auto;
     align-items: center;
 }
-
-
 
 .splitSection1text, .splitSection1image, .splitSection2text, .splitSection2image {
     width: 50%;
@@ -227,5 +231,93 @@ body {
     padding: 0px 25px;
     /* height: 12px;
     width: 12px; */
+}
+
+.email-id-font-size {
+    font-size: 48px;
+}
+
+.menu-toggle, #menu {
+    display: none;
+}
+
+
+
+@media (max-width:414px){
+    .splitSection1image {
+        display: none;
+    }
+
+    .splitSection1text {
+        width: auto;
+    }
+
+    .email-id-font-size {
+        font-size: 24px;
+    }
+
+    .splitSection2 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+    }
+
+    .splitSection1text, .splitSection1image, .splitSection2text {
+        width: auto;
+        padding: 30px 20px;
+    }
+
+    .projects {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: left;
+        align-items: start;
+    }
+
+    .project-item {
+        width: 100%;
+        max-width: 100%;
+        
+    }
+
+    .footer-icons-img {
+        padding: 0px 10px;
+        /* height: 12px;
+        width: 12px; */
+    }
+    
+    .split-sec-mimg {
+        width: 190px;
+    }
+
+    .subNavRightd {
+        display: none;
+    }
+
+    .subNavRightm {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+         font-size: 30px;
+        background-color: transparent;
+         color: #FAFBFF;
+        margin: 10px;
+        line-height: 25px;
+        border: 2px solid #0A0119;
+        border-radius: 10px;
+    }
+
+    .subNavkeysm {
+        margin: 20px;
+    }
 }
 
